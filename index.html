@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali&Ahsan Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form method="POST" name="sample" autocomplete="off">
+        <div id="input_container">
+            <div id="date_div">
+                <div id="date_2_div">
+                    <h2>DATE <span style="color: red;">*</span></h2>
+                    <label class="validation-error hide" id="fullNameValidationError" hidden>This field is
+                        required.</label>
+                </div>
+                <input id="dat" type="date" name="dat" class="input_tags">
+
+            </div>
+            <div id="category_div">
+                <h2> CATEGORY </h2>
+                <select name="cat" id="cat" class="input_tags">
+                    <option value=""></option>
+                    <option value="Food & Beverages">Food & Beverages</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Rentals">Rentals</option>
+                    <option value="Electric Bills">Electric Bills</option>
+                </select>
+
+            </div>
+            <div id="description_div">
+                <h2> DESCRIPTION </h2>
+                <input type="text" id="des" name="des" class="input_tags">
+            </div>
+        </div>
+        <br><br>
+        <div id="input_container2">
+            <div id="expense_div">
+                <h2> EXPENSE </h2>
+                <input type="number" id="exp" name="exp" class="input_tags ">
+            </div>
+            <input type="button" name="add" value="Add" onclick="operator();" id="add_button">
+
+        </div>
+
+
+        <hr>
+
+        <div id="search_div">
+            <h1>Monthly Expenses</h1>
+            <input type="search" placeholder="search by category..." class="input_tags" id="sea" onkeyup="search_fun()">
+            <select name="dropdown" id="dropdown" style="margin-left: 20px; border-radius: 5px;">
+                <!-- <option value="Arrange by Default">Arrange by Default</option> -->
+                <option value="Date">Date</option>
+                <option value="Category">Category</option>
+                <option value="Description">Description</option>
+                <option value="Expense">Expense</option>
+            </select>
+            <input type="button" name="asc_button" id="asc_button" value="ASC" onclick="sortAscending()"
+                style="margin: 0px 4px; border-radius: 4px; background-color: rgb(250, 12, 12); color: white;">
+            <input type="button" name="dsc_button" id="dsc_button" value="DSC" onclick="sortDescending()"
+                style="margin: 0px 4px; border-radius: 4px; background-color: blue; color: white;">
+        </div>
+        <div id="output_container">
+            <table id="tbl" class="table" border="1">
+                <thead>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Description </th>
+                    <th>Expense</th>
+                    <th>Delete</th>
+                    <th>EDIT</th>
+
+                </thead>
+
+                <tbody>
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </form>
+
+
+    <script type="text/javascript" src="javascript.js">
+
+      
+
+    </script>
+
+</body>
+
+</html>

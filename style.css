@@ -1,0 +1,103 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #564a5536;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#input_container {
+    margin: 40px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input_tags {
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+#date_div {
+    margin-right: 80px;
+}
+
+#date_2_div {
+    display: flex;
+    flex-direction: row;
+}
+
+#fullNameValidationError {
+    color: red;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+#category_div {
+    margin-right: 128px;
+}
+
+#input_container2 {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+#add_button {
+    height: 45px;
+    width: 64px;
+    margin-top: 15px;
+    color: rgb(123, 253, 112);
+    background-color: black;
+    border-radius: 7px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+#add_button:hover {
+    height: 45px;
+    width: 64px;
+    margin-top: 15px;
+    color: rgb(5, 5, 5);
+    background-color: rgb(247, 241, 241);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#search_div {
+    display: flex;
+    flex-direction: row;
+    height: 29px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search_div h1 {
+    padding-right: 50px;
+}
+
+#sea {
+    margin-left: 236px;
+}
+
+#output_container {
+    margin-left: 40px;
+}
+
+#output_container th {
+    width: 160px;
+}
+
+.del_btn {
+    padding: 0px 57px;
+    background-color: red;
+}
+
+.edit_btn {
+    padding: 0px 65px;
+
+}
